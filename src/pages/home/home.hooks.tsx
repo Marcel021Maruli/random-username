@@ -66,7 +66,6 @@ const useHome = () => {
       const { data } = await axios.get("https://randomuser.me/api/", {
         params: cleanObject(params),
       });
-      console.log(params);
       setUsers(data.results);
     } catch (error) {
       console.log(error);
